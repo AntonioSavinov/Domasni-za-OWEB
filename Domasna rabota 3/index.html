@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формула 1 - Симулатор на трка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Формула 1 трка </h1>
+        <p class="intro">Симулација на трка од 10 круга со 10 возачи.</p>
+        <div class="controls">
+            <button id="startButton">Започни трка</button>
+            <button id="nextLapButton" disabled>Следен круг</button>
+            <button id="resetButton">Нова трка</button>
+        </div>
+        <div id="raceInfo" class="race-info">Трката сè уште не е започната.</div>
+        <div id="winner" class="winner"></div>
+        <h2>Табела на возачи</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead><tr><th>Позиција</th><th>Возач</th><th>Тим</th><th>Гуми</th><th>Вкупно време</th><th>Статус во кругот</th></tr></thead>
+                <tbody id="driverTable"></tbody>
+            </table>
+        </div>
+        <p class="note">Секој возач мора барем еднаш да влезе во бокс и да го смени типот на гуми.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
